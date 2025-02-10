@@ -36,7 +36,7 @@ OnnxModelBase::OnnxModelBase(const char *modelPath, const char *logid, const cha
     OrtCUDAProviderOptions cudaOption;
 
     if (provider == OnnxProviders::CUDA.c_str())
-    { // strcmp(provider, OnnxProviders::CUDA.c_str()) == true strcmp(provider, "cuda") // (providerStr == "cuda")
+    { // strcmp(provider, OnnxProviders::CUDA.c_str()) == 0
         if (cudaAvailable == availableProviders.end())
         {
             std::cout << "CUDA is not supported by your ONNXRuntime build. Fallback to CPU." << std::endl;

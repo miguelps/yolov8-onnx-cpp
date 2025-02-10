@@ -343,9 +343,9 @@ void plot_results(cv::Mat img, std::vector<YoloResults> &results,
 int main()
 {
     std::string img_path = "../images/000000000382.jpg";
-    // const std::img_path& modelPath = "./checkpoints/yolov8n.onnx"; // detection
+    // const std::string& modelPath = "./checkpoints/yolov8n.onnx"; // detection
     //  vs:
-    //     const std::string& modelPath = "./checkpoints/yolov8n-seg.onnx"; // instance segmentation
+    // const std::string& modelPath = "./checkpoints/yolov8n-seg.onnx"; // instance segmentation
     //  clion:
     const std::string &modelPath = "../checkpoints/yolov8n-pose.onnx"; // pose
 
